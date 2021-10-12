@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Js">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="81dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/article"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/javascript" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/article_heading"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,UnknownId">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:autoLink="web"
+        android:lineSpacingExtra="@dimen/line_spacing"
+        android:padding="@dimen/padding_regular"
+        android:text="Javascript"
+        app:layout_constraintBottom_toTopOf="@+id/article_subheading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/article_subheading"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        android:padding="@dimen/padding_regular"
+        android:text="บทที่ 1  VS Code และพื้นฐานการเขียนโค้ด"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintBottom_toTopOf="@+id/article_subheading3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article" />
+
+    <TextView
+        android:id="@+id/article_subheading3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        android:padding="@dimen/padding_regular"
+        android:text="บทที่ 2  ตัวแปร ชนิดข้อมูล และโอเปอเรเตอร์"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintBottom_toTopOf="@+id/article_subheading4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_subheading" />
+
+    <TextView
+        android:id="@+id/article_subheading4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        android:padding="@dimen/padding_regular"
+        android:text="บทที่ 3  เงื่อนไขและการวนลูป"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintBottom_toTopOf="@+id/article_subheading5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_subheading3" />
+
+    <TextView
+        android:id="@+id/article_subheading5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        android:padding="@dimen/padding_regular"
+        android:text="บทที่ 4  การสร้างฟังก์ชัน"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintBottom_toTopOf="@+id/article_subheading6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_subheading4" />
+
+    <TextView
+        android:id="@+id/article_subheading6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        android:padding="@dimen/padding_regular"
+        android:text="บทที่ 5  อาร์เรย์ ออบเจ็กต์ และ JSON"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintBottom_toTopOf="@+id/article_subheading7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_subheading5" />
+
+    <TextView
+        android:id="@+id/article_subheading7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        android:padding="@dimen/padding_regular"
+        android:text="บทที่ 6  ตัวเลข สตริง และวันเวลา"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintBottom_toTopOf="@+id/article_subheading8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_subheading6" />
+
+    <TextView
+        android:id="@+id/article_subheading8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        android:padding="@dimen/padding_regular"
+        android:text="บทที่ 7  จาวาสคริปต์บนเว็บเพจและ DOM"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintBottom_toTopOf="@+id/article_subheading9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_subheading7" />
+
+    <TextView
+        android:id="@+id/article_subheading9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        android:padding="@dimen/padding_regular"
+        android:text="บทที่ 8  อีเวนต์และฟอร์ม"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintBottom_toTopOf="@+id/article_subheading10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_subheading8" />
+
+    <TextView
+        android:id="@+id/article_subheading10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        android:padding="@dimen/padding_regular"
+        android:text="บทที่ 9  คลาสและโมดูล"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintBottom_toTopOf="@+id/article_subheading11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_subheading9" />
+
+    <TextView
+        android:id="@+id/article_subheading11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        android:padding="@dimen/padding_regular"
+        android:text="บทที่ 10  Promise และ Asynchronous"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_subheading10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
